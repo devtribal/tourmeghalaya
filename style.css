@@ -1,0 +1,99 @@
+/*
+
+pending work: 
+add snippets for comments, 
+adjust the css properties and write them in the correct order
+
+*/
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: poppins;
+}
+
+.hook {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  color: white;
+}
+
+.hook p, .hook h1 {
+  margin:4px;
+  text-shadow: 
+  0 0 10px rgba(0, 0, 0, 0.8),
+  0 0 20px rgba(0, 0, 0, 0.6),
+  0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+
+#controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+#controls button {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255,255,255, 0.3);
+  backdrop-filter: blur(2px);
+  border-radius:  9999px;
+  
+  color: white;
+  text-shadow: 
+    0 0 10px rgba(0, 0, 0, 0.8),
+    0 0 20px rgba(0, 0, 0, 0.6),
+    0 0 30px rgba(255, 255, 255, 0.4);
+  
+  font: inherit;
+  font-size: 1rem;
+  
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#controls button:hover {
+  background-color: rgba(255,255,255, 0.2);
+  transform: scale(1.05) translateY(-3px) rotate(1deg);
+}
+
+#controls img {
+  height: 1.2em;
+  vertical-align: middle;
+}
+
+#block {
+  margin: 1.2em;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  padding: 10px;
+}
+
+#visit {
+  padding: 8px 8px 8px 14px; /* right visually heavier, so left gets +4px */
+}
+
+.hook a {
+  color: none;
+  padding: 0;
+  margin: 0;
+}
+
