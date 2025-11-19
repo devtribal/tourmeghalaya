@@ -6,19 +6,26 @@ adjust the css properties and write them in the correct order
 
 */
 
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: -1;
+}
 
 body {
   margin: 0;
   padding: 0;
   background-image: url('images/background.webp');
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur();
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: poppins;
+  font-family: poppins, sans-serif;
 }
 
 .hook {
