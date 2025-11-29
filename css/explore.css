@@ -1,89 +1,67 @@
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 
-  
-  margin: 0;
-  padding: 0;
 
-  background-color: rgb(47, 49, 54);
+	margin: 0;
+	padding: 0;
+	background-color: rgb(47, 47, 47);
 }
 
-.slot {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  max-height: 100vh;
-
-  gap: 20px;
-  flex-direction: column;
+#videoScrollArea {
+	scroll-snap-type: y mandatory;
+	height: 100vh;
+	overflow-y: scroll;
+	scrollbar-width: none;
 }
 
-.slot div {
-  display: flex;
-  gap: 12px;
+#videoScrollArea::-webkit-scrollbar {
+	display: none;
 }
-
-#go { /* this is for the GO! button */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 48px 8px 54px;
-
-  color: white;
-
-  font-size: 1.2rem;
-  font-family: poppins, sans-serif;
-
-  cursor: pointer;
-}
-
-.slot button { /* all buttons in the slot class */
-  text-align: center;
-
-  border-radius: 40px;
-  background-color: rgba(0,0,0,1);
-  border: none;
-}
-
-#map img {
-  height: 1.2rem;
-  padding: 8px;
-
-  border-radius: 9999px;
-}
-
-
 
 .videoArea {
-  display: flex;
-  scroll-snap-type: x mandatory;
-  overflow-x: auto;
-  height: 80vh;
-  width: 100vw;
-  scrollbar-width: none; /* firefox */
-  -ms-overflow-style: none; /* IE */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 100vh;
+	position: relative;
+	scroll-snap-align: start;
 }
 
-.videoChild { /* this is for the main video section */
-  flex: 0 0 100vw;
-  cursor: pointer;
-  scroll-snap-align: start;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+video {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
 }
 
-.videoChild video {
-  object-fit: contain;
-  border-radius: 24px;
-  max-width: 100%;
-  max-height: 100%;
-  height: auto;
-  width: auto;
+.buttonArea {
+	display: flex;
+	flex-direction: column;
+
+	gap: 16px;
+
+	right: 2%;
+	bottom: 2%;
+	position: absolute;
 }
+
+.buttonArea img {
+	height: 2.5rem;
+  filter: drop-shadow(0 0 10px black) 
+          drop-shadow(0 0 20px black) 
+          drop-shadow(0 0 30px black);
+
+	transition: all 300ms ease;
+}
+
+.buttonArea img:hover {
+		translate: 0px -5px;
+		scale: 1.2;
+	}
+
+
+
+	

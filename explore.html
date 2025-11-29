@@ -4,27 +4,37 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/explore.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-	<script src="js/script.js" defer></script>
-	<title>Document</title>
+	<script src="js/script.js"></script>
+	<title>Explore</title>
 </head>
 <body>
 
-	<div class="slot" id="contentArea">
+	<div id="videoScrollArea">
+	<div id="videoArea1" class="videoArea">
+		<video src="videos/pb.mp4" autoplay muted loop class="videoElement"></video>
 
-		<div class="videoArea">
-		<div class="videoChild">		<video src="videos/pb.mp4" autoplay muted loop></video></div>
-		<div class="videoChild">		<video src="videos/sohra.mp4" autoplay muted loop></video></div>
-		<div class="videoChild">		<video src="videos/bhoi.mp4" autoplay muted loop></video></div>
-		</div>
-
-		<div>
-		<button id='go'>GO!</button>
-		<button id="map"><a href=""><img src="images/map.png" alt="map logo"></a></button>
+		<div class="buttonArea">
+			<a href=""><img src="images/marker.png" alt="map" id="mapLogo" ></a>
 		</div>
 	</div>
 
+	<div id="videoArea2" class="videoArea">
+		<video src="videos/sohra.mp4" autoplay muted loop class="videoElement"></video>
+
+		<div class="buttonArea">
+			<a href=""><img src="images/marker.png" alt="map" id="mapLogo"></a>
+		</div>
+	</div>
+
+	<div id="videoArea3" class="videoArea">
+		<video src="videos/bhoi.mp4" autoplay muted loop class="videoElement"></video>
+
+		<div class="buttonArea">
+			<a href=""><img src="images/marker.png" alt="map" id="mapLogo"></a>
+		</div>
+	</div>
+
+	</div>
+	
 </body>
 </html>
